@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATÁLOGIX | Catálogos Digitales para Negocios de Huamachuco</title>
+    <meta name="description" content="Diseño de catálogos digitales personalizados con enlace y código QR para restaurantes, tiendas y emprendimientos de Huamachuco.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <span>CATÁLO<strong>GIX</strong></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Propuesta</a>
+                <a href="#paquetes">Paquetes y Precios</a>
+                <a href="#ejemplos">Ejemplos</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto" class="nav-cta">Cotizar Ahora</a>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-pill">
+                    <i class="fa-solid fa-location-dot"></i> Huamachuco – La Libertad, Perú
+                </div>
+                <h1>Catálogos digitales que impulsan las ventas de tu <span class="text-gradient">negocio local</span></h1>
+                <p class="hero-subtitle">
+                    Reúne todos tus productos, precios y servicios en un solo espacio moderno, ordenado y fácil de compartir mediante <strong>enlace directo y código QR</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a href="#paquetes" class="btn btn-primary">
+                        Ver Paquetes y Precios <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20me%20interesa%20crear%20un%20cat%C3%A1logo%20digital%20para%20mi%20negocio." target="_blank" rel="noopener" class="btn btn-outline">
+                        <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Adaptado a Celular</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">QR + Link</span>
+                        <span class="stat-label">Listo para Compartir</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">50 / 50</span>
+                        <span class="stat-label">Pago Seguro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simulador Interactivo de Catálogo Móvil -->
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="mock-header">
+                            <span class="mock-badge">Vista Previa en Vivo</span>
+                            <h4>Cevichería &amp; Pollería El Puerto</h4>
+                            <p><i class="fa-solid fa-qrcode"></i> Escaneado vía Código QR</p>
+                        </div>
+                        <div class="mock-tabs">
+                            <button class="mock-tab active" data-mock="platos">Platos</button>
+                            <button class="mock-tab" data-mock="bebidas">Bebidas</button>
+                            <button class="mock-tab" data-mock="promos">Promos</button>
+                        </div>
+                        <div class="mock-items" id="mockItemsContainer">
+                            <!-- Renderizado dinámico con JS -->
+                        </div>
+                        <div class="mock-footer">
+                            <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20quiero%20un%20cat%C3%A1logo%20como%20el%20de%20la%20demo." target="_blank" rel="noopener" class="mock-order-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-qr-card">
+                    <div class="qr-box">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <div>
+                        <strong>Acceso Instantáneo</strong>
+                        <span>Sin descargar apps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema y Propuesta de Valor -->
+    <section id="beneficios" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Propuesta de Valor</span>
+                <h2>Deja atrás las fotos sueltas y listas desordenadas</h2>
+                <p>Ayudamos a los negocios de Huamachuco a proyectar una imagen profesional y facilitar la compra de sus clientes.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Diseño Personalizado</h3>
+                    <p>Adaptamos colores, tipografía y estilo visual a la identidad única de tu restaurante, tienda o emprendimiento.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h3>Organización por Categorías</h3>
+                    <p>Clasificamos tus productos con descripciones claras y precios actualizados para una navegación rápida.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Edición de Fotografías</h3>
+                    <p>Mejoramos la iluminación y presentación de las fotos proporcionadas por tu negocio para que luzcan irresistibles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-qrcode"></i></div>
+                    <h3>Enlace Web y Código QR</h3>
+                    <p>Recibe un enlace directo para redes sociales y un código QR listo para imprimir en mesas, mostradores o empaques.</p>
+                </div>
+            </div>
+
+            <!-- Rubros que atendemos -->
+            <div class="rubros-banner">
+                <h3>Diseñado para los emprendimientos de Huamachuco:</h3>
+                <div class="rubros-tags">
+                    <span><i class="fa-solid fa-utensils"></i> Restaurantes y Pollerías</span>
+                    <span><i class="fa-solid fa-fish"></i> Cevicherías</span>
+                    <span><i class="fa-solid fa-store"></i> Bodegas y Minimarkets</span>
+                    <span><i class="fa-solid fa-shirt"></i> Ropa y Calzado</span>
+                    <span><i class="fa-solid fa-bread-slice"></i> Panaderías</span>
+                    <span><i class="fa-solid fa-book"></i> Librerías</span>
+                    <span><i class="fa-solid fa-hands-holding-circle"></i> Artesanos Locales</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes y Precios -->
+    <section id="paquetes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Planes y Tarifas</span>
+                <h2>Elige el paquete ideal para tu negocio</h2>
+                <p>Soluciones escalables con precios transparentes. Modalidad de pago: <strong>50% de adelanto y 50% al aprobar y entregar</strong>.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Paquete Básico -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Paquete Básico</h3>
+                        <p class="plan-desc">Ideal para emprendimientos que inician su presencia digital.</p>
+                        <div class="plan-price">
+                            <span class="currency">S/</span>
+                            <span class="amount">350</span>
+                            <span class="period">/ pago único</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Hasta 15 productos</strong> o servicios</li>
+                        <li><i class="fa-solid fa-check"></i> Diseño básico limpio y ordenado</li>
+                        <li><i class="fa-solid fa-check"></i> Textos y precios organizados</li>
+                        <li><i class="fa-solid fa-check"></i> Enlace web para compartir</li>
+                        <li><i class="fa-solid fa-check"></i> Código QR descargable</li>
+                        <li><i class="fa-solid fa-check"></i> 1 ronda de revisión incluida</li>
+                    </ul>
+                    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20deseo%20solicitar%20el%20*Paquete%20B%C3%A1sico%20(S/%20350)*." target="_blank" rel="noopener" class="btn btn-outline btn-block">
+                        Solicitar Básico
+                    </a>
+                </div>
+
+                <!-- Paquete Avanzado / Profesional (Destacado) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Más Elegido</div>
+                    <div class="plan-header">
+                        <h3>Paquete Avanzado</h3>
+                        <span class="plan-subtag">Plan Profesional</span>
+                        <p class="plan-desc">Para negocios en crecimiento que buscan mayor impacto visual.</p>
+                        <div class="plan-price">
+                            <span class="currency">S/</span>
+                            <span class="amount">550</span>
+                            <span class="period">/ pago único</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Hasta 30 productos</strong> o servicios</li>
+                        <li><i class="fa-solid fa-check"></i> Diseño 100% personalizado a tu marca</li>
+                        <li><i class="fa-solid fa-check"></i> Edición de fotos proporcionadas</li>
+                        <li><i class="fa-solid fa-check"></i> Organización por categorías</li>
+                        <li><i class="fa-solid fa-check"></i> Enlace web y Código QR personalizado</li>
+                        <li><i class="fa-solid fa-check"></i> 2 rondas de revisión incluidas</li>
+                    </ul>
+                    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20deseo%20solicitar%20el%20*Paquete%20Avanzado%20/%20Profesional%20(S/%20550)*." target="_blank" rel="noopener" class="btn btn-primary btn-block">
+                        Solicitar Avanzado
+                    </a>
+                </div>
+
+                <!-- Paquete Premium -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Paquete Premium</h3>
+                        <p class="plan-desc">Experiencia completa para catálogos amplios y marcas consolidadas.</p>
+                        <div class="plan-price">
+                            <span class="currency">S/</span>
+                            <span class="amount">800</span>
+                            <span class="period">/ pago único</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Hasta 50 productos</strong> o servicios</li>
+                        <li><i class="fa-solid fa-check"></i> Diseño avanzado de alto impacto</li>
+                        <li><i class="fa-solid fa-check"></i> Edición profesional de fotografías</li>
+                        <li><i class="fa-solid fa-check"></i> Portada y secciones especiales</li>
+                        <li><i class="fa-solid fa-check"></i> Enlaces directos de contacto y QR</li>
+                        <li><i class="fa-solid fa-check"></i> 3 revisiones + orientación personalizada</li>
+                    </ul>
+                    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20deseo%20solicitar%20el%20*Paquete%20Premium%20(S/%20800)*." target="_blank" rel="noopener" class="btn btn-outline btn-block">
+                        Solicitar Premium
+                    </a>
+                </div>
+            </div>
+
+            <!-- Servicios Adicionales -->
+            <div class="addons-box">
+                <div class="addons-title">
+                    <h4><i class="fa-solid fa-plus-circle"></i> Servicios Adicionales Opcionales</h4>
+                    <p>Complementa o mantén siempre actualizado tu catálogo digital:</p>
+                </div>
+                <div class="addons-grid">
+                    <div class="addon-item">
+                        <div>
+                            <strong>Mantenimiento Mensual</strong>
+                            <span>Actualización de precios y productos</span>
+                        </div>
+                        <span class="addon-price">Desde S/ 120/mes</span>
+                    </div>
+                    <div class="addon-item">
+                        <div>
+                            <strong>Sesión Fotográfica Presencial</strong>
+                            <span>Toma de fotos en tu local (Huamachuco)</span>
+                        </div>
+                        <span class="addon-price">Desde S/ 120</span>
+                    </div>
+                    <div class="addon-item">
+                        <div>
+                            <strong>Revisiones Adicionales</strong>
+                            <span>Cambios extra fuera del paquete</span>
+                        </div>
+                        <span class="addon-price">Desde S/ 50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Ejemplos -->
+    <section id="ejemplos" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portafolio de Referencia</span>
+                <h2>Ejemplos de Catálogos por Rubro</h2>
+                <p>Explora cómo luce la experiencia digital que diseñamos para los distintos comercios locales.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="gastronomia">Gastronomía</button>
+                <button class="filter-btn" data-filter="comercio">Bodegas y Tiendas</button>
+                <button class="filter-btn" data-filter="moda">Moda y Calzado</button>
+            </div>
+
+            <div class="examples-grid" id="examplesGrid">
+                <!-- Ejemplo 1 -->
+                <article class="example-card" data-category="gastronomia">
+                    <div class="example-cover cover-gastro">
+                        <span class="example-badge">Gastronomía</span>
+                        <i class="fa-solid fa-shrimp cover-icon"></i>
+                    </div>
+                    <div class="example-body">
+                        <h3>Cevichería &amp; Marisquería</h3>
+                        <p>Carta digital dividida en entradas, ceviches, platos calientes y bebidas con botón directo a pedidos.</p>
+                        <div class="example-meta">
+                            <span><i class="fa-solid fa-layer-group"></i> Paquete Avanzado</span>
+                            <button class="btn-link open-preview" data-title="Cevichería &amp; Marisquería" data-plan="Paquete Avanzado (S/ 550)" data-items="Ceviche Mixto - S/ 25|Jalea Real - S/ 32|Arroz con Mariscos - S/ 24|Chicha Morada 1L - S/ 10">
+                                Ver Demo <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ejemplo 2 -->
+                <article class="example-card" data-category="comercio">
+                    <div class="example-cover cover-store">
+                        <span class="example-badge">Minimarket</span>
+                        <i class="fa-solid fa-basket-shopping cover-icon"></i>
+                    </div>
+                    <div class="example-body">
+                        <h3>Minimarket &amp; Panadería</h3>
+                        <p>Catálogo de abarrotes, productos de panificación diaria y promociones semanales listas para compartir por WhatsApp.</p>
+                        <div class="example-meta">
+                            <span><i class="fa-solid fa-layer-group"></i> Paquete Premium</span>
+                            <button class="btn-link open-preview" data-title="Minimarket &amp; Panadería" data-plan="Paquete Premium (S/ 800)" data-items="Canasta Familiar Básica - S/ 65|Pan Chapla x10 unid. - S/ 3.50|Torta Tres Leches - S/ 45|Pack Desayuno Andino - S/ 18">
+                                Ver Demo <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ejemplo 3 -->
+                <article class="example-card" data-category="moda">
+                    <div class="example-cover cover-fashion">
+                        <span class="example-badge">Moda y Calzado</span>
+                        <i class="fa-solid fa-bag-shopping cover-icon"></i>
+                    </div>
+                    <div class="example-body">
+                        <h3>Tienda de Ropa &amp; Calzado</h3>
+                        <p>Exhibición visual de temporada con tallas disponibles, colores y enlace directo de consulta de stock.</p>
+                        <div class="example-meta">
+                            <span><i class="fa-solid fa-layer-group"></i> Paquete Básico</span>
+                            <button class="btn-link open-preview" data-title="Tienda de Ropa &amp; Calzado" data-plan="Paquete Básico (S/ 350)" data-items="Casaca Impermeable Unisex - S/ 89|Zapatillas Urbanas - S/ 110|Polera Algodón Premium - S/ 65|Mochila Escolar Reforzada - S/ 55">
+                                Ver Demo <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Fundador -->
+    <section id="equipo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Talento Local</span>
+                <h2>Nuestro Equipo de Trabajo</h2>
+                <p>Estudiantes de Computación e Informática del <strong>IESTP Huamachuco</strong> comprometidos con la digitalización comercial.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">AA</div>
+                    <h4>Alfaro Campos Anali</h4>
+                    <span class="team-role">Coordinación General</span>
+                    <p>Planificación, cronograma y control de entregas.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">AP</div>
+                    <h4>Arce Peña Janeth</h4>
+                    <span class="team-role">Diseño Visual</span>
+                    <p>Composición gráfica, diagramación y estética de catálogos.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">JA</div>
+                    <h4>Jara Alayo Yaler</h4>
+                    <span class="team-role">Atención al Cliente</span>
+                    <p>Recopilación de requerimientos y asesoría comercial.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">OH</div>
+                    <h4>Otiniano Henriquez Ronaldo</h4>
+                    <span class="team-role">Soporte Técnico</span>
+                    <p>Gestión de enlaces, códigos QR, pruebas y respaldo.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">SR</div>
+                    <h4>Sanchez Ruiz Jose</h4>
+                    <span class="team-role">Contenido y Difusión</span>
+                    <p>Organización de listas de precios, textos y promoción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Cotización -->
+    <section id="contacto" class="section contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-tag tag-light">Contacto Directo</span>
+                <h2>¿Listo para digitalizar tu negocio en Huamachuco?</h2>
+                <p>Escríbenos directamente por WhatsApp o envíanos los datos de tu negocio. Te asesoramos sin compromiso para elegir el paquete ideal.</p>
+
+                <div class="contact-methods">
+                    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20cat%C3%A1logos%20digitales." target="_blank" rel="noopener" class="contact-card-item whatsapp-highlight">
+                        <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <strong>WhatsApp Directo (Respuesta Rápida)</strong>
+                            <span>+51 941 737 379</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-card-item">
+                        <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <strong>Ubicación de Atención</strong>
+                            <span>Huamachuco, Sánchez Carrión – La Libertad</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="c-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div>
+                            <strong>Modalidad de Trabajo</strong>
+                            <span>50% adelanto / 50% al aprobar y entregar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario que redirige a WhatsApp -->
+            <div class="contact-form-box">
+                <h3>Solicita tu Catálogo Ahora</h3>
+                <form id="whatsappQuoteForm">
+                    <div class="form-group">
+                        <label for="clientName">Tu Nombre o Negocio *</label>
+                        <input type="text" id="clientName" placeholder="Ej. Pollería El Dorado" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="businessType">Rubro del Negocio *</label>
+                        <select id="businessType" required>
+                            <option value="">Selecciona tu rubro...</option>
+                            <option value="Restaurante / Pollería / Cevichería">Restaurante / Pollería / Cevichería</option>
+                            <option value="Bodega / Minimarket">Bodega / Minimarket</option>
+                            <option value="Ropa y Calzado">Ropa y Calzado</option>
+                            <option value="Panadería / Pastelería">Panadería / Pastelería</option>
+                            <option value="Librería / Bazar">Librería / Bazar</option>
+                            <option value="Emprendimiento Artesanal / Otro">Emprendimiento Artesanal / Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectedPackage">Paquete de Interés *</label>
+                        <select id="selectedPackage" required>
+                            <option value="Paquete Básico (S/ 350 - Hasta 15 productos)">Paquete Básico – S/ 350 (Hasta 15 productos)</option>
+                            <option value="Paquete Avanzado / Profesional (S/ 550 - Hasta 30 productos)" selected>Paquete Avanzado – S/ 550 (Hasta 30 productos)</option>
+                            <option value="Paquete Premium (S/ 800 - Hasta 50 productos)">Paquete Premium – S/ 800 (Hasta 50 productos)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientMessage">Detalles adicionales (opcional)</label>
+                        <textarea id="clientMessage" rows="3" placeholder="Cuéntanos cuántos productos tienes aproximadamente o si necesitas sesión fotográfica..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp btn-block">
+                        <i class="fa-brands fa-whatsapp"></i> Enviar Solicitud al +51 941 737 379
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo logo-light">
+                    <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <span>CATÁLO<strong>GIX</strong></span>
+                </a>
+                <p>Catálogos digitales personalizados para impulsar los negocios de Huamachuco.</p>
+            </div>
+            <div class="footer-academic">
+                <p><strong>Proyecto de Emprendimiento – IESTP Huamachuco (2026-VI)</strong></p>
+                <p>Prototipo web académico • Contacto comercial: <a href="https://wa.me/51941737379" target="_blank" rel="noopener">+51 941 737 379</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20vengo%20de%20su%20p%C3%A1gina%20web%20y%20quiero%20cotizar%20un%20cat%C3%A1logo%20digital." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="float-tooltip">¡Cotiza por WhatsApp!</span>
+    </a>
+
+    <!-- Modal de Vista Previa de Ejemplo -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModal" aria-label="Cerrar vista previa"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <span class="badge-pill" id="modalPlan">Paquete Avanzado</span>
+                <h3 id="modalTitle">Vista Previa del Catálogo</h3>
+            </div>
+            <div class="modal-body" id="modalItemsList"></div>
+            <div class="modal-footer">
+                <a href="https://wa.me/51941737379?text=Hola%20CAT%C3%81LOGIX,%20me%20gust%C3%B3%20un%20ejemplo%20de%20su%20web%20y%20quiero%20uno%20para%20mi%20negocio." target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Quiero uno igual (+51 941 737 379)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
